@@ -54,6 +54,7 @@ namespace MathQuiz
             this.dividedLeftLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.dateLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -64,27 +65,27 @@ namespace MathQuiz
             // 
             this.timeLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.timeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeLabel.Location = new System.Drawing.Point(321, 9);
+            this.timeLabel.Location = new System.Drawing.Point(411, 9);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(200, 42);
+            this.timeLabel.Size = new System.Drawing.Size(141, 41);
             this.timeLabel.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(125, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(272, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 42);
+            this.label1.Size = new System.Drawing.Size(133, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Time Left";
             // 
             // plusLeftLabel
             // 
-            this.plusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plusLeftLabel.Location = new System.Drawing.Point(55, 77);
             this.plusLeftLabel.Name = "plusLeftLabel";
-            this.plusLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.plusLeftLabel.Size = new System.Drawing.Size(80, 50);
             this.plusLeftLabel.TabIndex = 2;
             this.plusLeftLabel.Text = "?";
             this.plusLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,7 +93,7 @@ namespace MathQuiz
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(120, 77);
+            this.label2.Location = new System.Drawing.Point(124, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 50);
             this.label2.TabIndex = 3;
@@ -111,10 +112,10 @@ namespace MathQuiz
             // 
             // plusRightLabel
             // 
-            this.plusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plusRightLabel.Location = new System.Drawing.Point(187, 77);
             this.plusRightLabel.Name = "plusRightLabel";
-            this.plusRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.plusRightLabel.Size = new System.Drawing.Size(80, 50);
             this.plusRightLabel.TabIndex = 5;
             this.plusRightLabel.Text = "?";
             this.plusRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -139,10 +140,10 @@ namespace MathQuiz
             // 
             // minusRightLabel
             // 
-            this.minusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minusRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minusRightLabel.Location = new System.Drawing.Point(187, 141);
             this.minusRightLabel.Name = "minusRightLabel";
-            this.minusRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.minusRightLabel.Size = new System.Drawing.Size(80, 50);
             this.minusRightLabel.TabIndex = 10;
             this.minusRightLabel.Text = "?";
             this.minusRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,7 +161,7 @@ namespace MathQuiz
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(121, 141);
+            this.label6.Location = new System.Drawing.Point(124, 137);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 50);
             this.label6.TabIndex = 8;
@@ -169,10 +170,10 @@ namespace MathQuiz
             // 
             // minusLeftLabel
             // 
-            this.minusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minusLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minusLeftLabel.Location = new System.Drawing.Point(55, 141);
             this.minusLeftLabel.Name = "minusLeftLabel";
-            this.minusLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.minusLeftLabel.Size = new System.Drawing.Size(80, 50);
             this.minusLeftLabel.TabIndex = 7;
             this.minusLeftLabel.Text = "?";
             this.minusLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -188,10 +189,10 @@ namespace MathQuiz
             // 
             // timesRightLabel
             // 
-            this.timesRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timesRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timesRightLabel.Location = new System.Drawing.Point(187, 197);
             this.timesRightLabel.Name = "timesRightLabel";
-            this.timesRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.timesRightLabel.Size = new System.Drawing.Size(80, 50);
             this.timesRightLabel.TabIndex = 15;
             this.timesRightLabel.Text = "?";
             this.timesRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -209,7 +210,7 @@ namespace MathQuiz
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(121, 197);
+            this.label10.Location = new System.Drawing.Point(124, 197);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 50);
             this.label10.TabIndex = 13;
@@ -218,10 +219,10 @@ namespace MathQuiz
             // 
             // timesLeftLabel
             // 
-            this.timesLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timesLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timesLeftLabel.Location = new System.Drawing.Point(55, 197);
             this.timesLeftLabel.Name = "timesLeftLabel";
-            this.timesLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.timesLeftLabel.Size = new System.Drawing.Size(80, 50);
             this.timesLeftLabel.TabIndex = 12;
             this.timesLeftLabel.Text = "?";
             this.timesLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -237,10 +238,10 @@ namespace MathQuiz
             // 
             // dividedRightLabel
             // 
-            this.dividedRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dividedRightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dividedRightLabel.Location = new System.Drawing.Point(187, 258);
             this.dividedRightLabel.Name = "dividedRightLabel";
-            this.dividedRightLabel.Size = new System.Drawing.Size(60, 50);
+            this.dividedRightLabel.Size = new System.Drawing.Size(80, 50);
             this.dividedRightLabel.TabIndex = 20;
             this.dividedRightLabel.Text = "?";
             this.dividedRightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -258,7 +259,7 @@ namespace MathQuiz
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(121, 257);
+            this.label14.Location = new System.Drawing.Point(124, 257);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(60, 50);
             this.label14.TabIndex = 18;
@@ -267,10 +268,10 @@ namespace MathQuiz
             // 
             // dividedLeftLabel
             // 
-            this.dividedLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dividedLeftLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dividedLeftLabel.Location = new System.Drawing.Point(55, 257);
             this.dividedLeftLabel.Name = "dividedLeftLabel";
-            this.dividedLeftLabel.Size = new System.Drawing.Size(60, 50);
+            this.dividedLeftLabel.Size = new System.Drawing.Size(80, 50);
             this.dividedLeftLabel.TabIndex = 17;
             this.dividedLeftLabel.Text = "?";
             this.dividedLeftLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -279,7 +280,7 @@ namespace MathQuiz
             // 
             this.startButton.AutoSize = true;
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startButton.Location = new System.Drawing.Point(132, 334);
+            this.startButton.Location = new System.Drawing.Point(148, 342);
             this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(238, 48);
             this.startButton.TabIndex = 1;
@@ -292,11 +293,22 @@ namespace MathQuiz
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.Location = new System.Drawing.Point(8, 9);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(176, 32);
+            this.dateLabel.TabIndex = 21;
+            this.dateLabel.Text = "Current Date";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(536, 394);
+            this.ClientSize = new System.Drawing.Size(564, 418);
+            this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.quotient);
             this.Controls.Add(this.dividedRightLabel);
@@ -323,7 +335,7 @@ namespace MathQuiz
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Math Quiz";
+            this.Text = "Weston Jones | Math Quiz ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).EndInit();
@@ -360,6 +372,7 @@ namespace MathQuiz
         private System.Windows.Forms.Label dividedLeftLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label dateLabel;
     }
 }
 
